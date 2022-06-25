@@ -1,10 +1,13 @@
+import Cats from './pages/cats'
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        App
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path='/' element={<Cats />} />
+      </Routes>
+    </>
+  )
 }
-
-export default App;
+export default App
